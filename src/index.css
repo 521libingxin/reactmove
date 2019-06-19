@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.styleall{
+  position: absolute;
+  left:100px;
+  top:100px;
+  right:0;
+  bottom:0;
+}
+.jsplumbleft{
+  width:200px;
+  height:400px;
+}
+.jsplumbright{
+  position: absolute;
+  left:200px;
+  top:0;
+  bottom:0;
+  right:200px;
+  overflow: auto;
+  border-left:1px solid #666;
+  border-right:1px solid #666;
+}
+.jsplumbtext{
+  width:200px;
+  right:0;
+  top:0;
+  position: absolute;
+}
+.jsplumbadd{
+  width:50px;
+  height:50px;
+  margin-left:50px;
+  border:1px solid #ccc;
+}
+.jsplumbhover{
+  position: fixed;
+  left:0;
+  top:0;
+  width:50px;
+  height:50px;
+  border:1px solid #000;
+  background:#fff;
+  cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.jsplumbmove{
+  position: absolute;
+  left:0;
+  top:0;
+  width:50px;
+  height:50px;
+  border:1px solid #000;
+  background:#fff;
+  cursor:pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.componentresize{
+  width:6px;
+  height:6px;
+  background:#fff;
+  border:1px solid #000;
+  position: absolute;
+}
+.lefttop{
+  left:-4px;
+  top:-4px;
+  cursor:nw-resize;
+}
+.leftbottom{
+  left:-4px;
+  bottom:-4px;
+  cursor:sw-resize;
+}
+.righttop{
+  right:-4px;
+  top:-4px;
+  cursor:ne-resize;
+}
+.rightbottom{
+  right:-4px;
+  bottom:-4px;
+  cursor:se-resize;
+}
+.componentpoint{
+  width:6px;
+  height:6px;
+  border-radius: 3px;
+  border:1px solid #000;
+  background:#fff;
+  position: absolute;
+}
+.rightpoint{
+  right:-4px;
+  top:50%;
+  transform:translate(0,-4px);
+  -ms-transform:translate(0,-4px); 	/* IE 9 */
+  -moz-transform:translate(0,-4px); 	/* Firefox */
+  -webkit-transform:translate(0,-4px); /* Safari 和 Chrome */
+  -o-transform:translate(0,-4px);
+}
+.toppoint{
+  top:-4px;
+  left:50%;
+  transform:translate(-4px,0);
+  -ms-transform:translate(-4px,0); 	/* IE 9 */
+  -moz-transform:translate(-4px,0); 	/* Firefox */
+  -webkit-transform:translate(-4px,0); /* Safari 和 Chrome */
+  -o-transform:translate(-4px,0);
+}
+.leftpoint{
+  left:-4px;
+  top:50%;
+  transform:translate(0,-4px);
+  -ms-transform:translate(0,-4px); 	/* IE 9 */
+  -moz-transform:translate(0,-4px); 	/* Firefox */
+  -webkit-transform:translate(0,-4px); /* Safari 和 Chrome */
+  -o-transform:translate(0,-4px);
+}
+.bottompoint{
+  bottom:-4px;
+  left:50%;
+  transform:translate(-4px,0);
+  -ms-transform:translate(-4px,0); 	/* IE 9 */
+  -moz-transform:translate(-4px,0); 	/* Firefox */
+  -webkit-transform:translate(-4px,0); /* Safari 和 Chrome */
+  -o-transform:translate(-4px,0);
+}
+.linestyle{
+transform-origin:0 1px;
+-ms-transform-origin:0 1px; 		/* IE 9 */
+-webkit-transform-origin:0 1px;	/* Safari 和 Chrome */
+-moz-transform-origin:0 1px;		/* Firefox */
+-o-transform-origin:0 1px;
+  position: absolute;
+  background:#000;
+  height:2px;
+  z-index:20;
+}
+.linestylet{
+transform-origin:0 0;
+-ms-transform-origin:0 0; 		/* IE 9 */
+-webkit-transform-origin:0 0;	/* Safari 和 Chrome */
+-moz-transform-origin:0 0;		/* Firefox */
+-o-transform-origin:0 0;
+  position: absolute;
+  border-top:1px solid #000;
+  z-index:20;
+  width:100px;
+}
+.testrot{
+  width:100px;
+  height:1px;
+  transform-origin:0 0;
+  -ms-transform-origin:0 0; 		/* IE 9 */
+  -webkit-transform-origin:0 0;	/* Safari 和 Chrome */
+  -moz-transform-origin:0 0;		/* Firefox */
+  -o-transform-origin:0 0;
+    position: absolute;
+    background: #000;
+    z-index:20;
+}
+.lineup{
+  border-bottom:3px solid #000;
+  border-top:3px solid transparent;
+  border-right:7px solid transparent;
+  border-left:7px solid #000;
+  position: absolute;
+  top:-5px;
+  right:0;
+}
+.linedown{
+  border-bottom:3px solid transparent;
+  border-top:3px solid #000;
+  border-left:7px solid #000;
+  border-right:7px solid transparent;
+  position: absolute;
+  bottom:-5px;
+  right:0;
+}
